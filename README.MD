@@ -24,6 +24,9 @@ on utilise pythagore
 ## alteration des messages 
 
 plus on s'ecarte plus les caracteres ont de chances d'etres permutes avec un autre aleatoire.
+- zone 1 : rayon de ??? m --> msg clair
+- zone 2 : rayon de ??? a ???? --> caracteres permutes + possible floutage
+- zone 3 : + que ???? --> msg non affiche
 
 ## app mobile
 
