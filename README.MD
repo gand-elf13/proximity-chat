@@ -28,3 +28,4 @@ plus on s'ecarte plus les caracteres ont de chances d'etres permutes avec un aut
 ## app mobile
 
 aucune idee
+testtesttest
