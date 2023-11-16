@@ -13,7 +13,7 @@ fait, a ameliorer, host ici https://clerical-chock.000webhostapp.com/
 ## Stockage des messages:
 
 sous la forme:
-
+la partie pseudo id message est faite
 pseudo-id-message-x-y
 
 ## calcul de la distance 
