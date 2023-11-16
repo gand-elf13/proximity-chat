@@ -9,8 +9,7 @@
 
 ## systeme de chat
 
-je ne sait pas host par github
-
+fait, a ameliorer, host ici https://clerical-chock.000webhostapp.com/
 ## Stockage des messages:
 
 sous la forme:
