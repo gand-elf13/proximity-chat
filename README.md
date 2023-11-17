@@ -29,7 +29,7 @@ plus on s'ecarte plus les caracteres ont de chances d'etres permutes avec un aut
 
 ## app mobile
 
-aucune idee
+aucune idee, c'est pas joli mais ca marche 
 
 ## lien pour trouver du code :
 
@@ -41,3 +41,9 @@ https://numa-bord.com/miniblog/php-calcul-de-distance-entre-2-coordonnees-gps-la
 
 - recuperation de l'ip du user et puis a partir de l'ip, on trouve sa ville :
 https://wabeo.fr/coordonnees-gps-utilisateur/
+
+- autre calcul distance :
+https://www.awelty.fr/blog/developpement-web/php.html
+
+- tutoriel HTML et CSS :
+https://www.cssdebutant.com/
