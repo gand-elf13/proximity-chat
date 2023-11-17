@@ -30,3 +30,14 @@ plus on s'ecarte plus les caracteres ont de chances d'etres permutes avec un aut
 ## app mobile
 
 aucune idee
+
+## lien pour trouver du code :
+
+- recup coordonnees gps en php :
+https://numa-bord.com/miniblog/php-google-map-api-recuperer-coordonees-gps-depuis-adresse-format-humain/
+
+- calcul distance entre 2 coordonnees gps en php : 
+https://numa-bord.com/miniblog/php-calcul-de-distance-entre-2-coordonnees-gps-latitude-longitude/
+
+- recuperation de l'ip du user et puis a partir de l'ip, on trouve sa ville :
+https://wabeo.fr/coordonnees-gps-utilisateur/
