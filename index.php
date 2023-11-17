@@ -29,6 +29,8 @@ if (isset($_POST['pseudo']) AND isset($_POST['usermsg']) AND !empty($_POST['pseu
     		<input name="usermsg" type="text" size="63" placeholder = "MESSAGE" /><br />
     		<input type="submit" value="Send" />
 		</form>
+
+		getlocation()
         <?php
         $allmsg = $db->query('SELECT * FROM messages ORDER BY id DESC');
         
@@ -43,5 +45,7 @@ if (isset($_POST['pseudo']) AND isset($_POST['usermsg']) AND !empty($_POST['pseu
         
         }
         ?>
+
+		<script src='./script.js'>   <script/>
 	</body>
 </html>
