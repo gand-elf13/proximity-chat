@@ -25,8 +25,8 @@ if (isset($_POST['pseudo']) AND isset($_POST['usermsg']) AND !empty($_POST['pseu
 		<p>This chat is a WIP, for the moment you can chat on it, but it will have some cool functionalities based on your location, stay tuned !!!</p>
 
 		<form method="post" name="message" action="">
-    		<input name="pseudo" type="text" size="63" placeholder = "PSEUDO" value = "<?php if(isset($pseudo)) { echo $pseudo; } ?>" /><br />
-    		<input name="usermsg" type="text" size="63" placeholder = "MESSAGE" /><br />
+    		<input id="username_input" name="pseudo" type="text" size="63" placeholder = "PSEUDO" value = "<?php if(isset($pseudo)) { echo $pseudo; } ?>" /><br />
+    		<input id="message_input" name="usermsg" type="text" size="63" placeholder = "MESSAGE" /><br />
     		<input type="submit" value="Send" />
 		</form>
 
