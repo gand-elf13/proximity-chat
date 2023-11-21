@@ -1,9 +1,9 @@
-function getRandom(array) {
+export function getRandom(array) {
     return array[Math.floor(Math.random() * array.length)];    
 }
 
 
-function blur(initialMessage, percent) {
+export function blur(initialMessage, percent) {
     let blurredMessage = "";
     const BLURRED = ["@", "&", "#", ";", "!", "*", "µ", "£", "$", "€", ",", "'", '"', "`", "~", "^", "à", "é", "ê", "â", "ù"];
     for (let char of initialMessage) {

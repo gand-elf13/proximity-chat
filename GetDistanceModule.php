@@ -6,7 +6,7 @@ class Point
 }
 
 
-function createPoint ($l, $L) {
+export function createPoint ($l, $L) {
 	$newPoint = new Point();
 	$newPoint -> l = deg2rad($l);
 	$newPoint -> L = deg2rad($L);
@@ -14,7 +14,7 @@ function createPoint ($l, $L) {
 }
 
 
-function getDistanceFromPoints ($p0, $p1) {
+export function getDistanceFromPoints ($p0, $p1) {
 	$R = 6371.0;
 	return acos
 	(
@@ -23,7 +23,7 @@ function getDistanceFromPoints ($p0, $p1) {
 }
 
 
-function getDistance ($l0, $L0, $l1, $L1) {
+export function getDistance ($l0, $L0, $l1, $L1) {
 	$point0 = createPoint ($l0, $L0);
 	$point1 = createPoint ($l1, $L1);
 	$distance = getDistanceFromPoints ($point0, $point1);
