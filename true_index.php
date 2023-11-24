@@ -19,8 +19,8 @@ if (isset($_POST['pseudo']) AND isset($_POST['usermsg']) AND !empty($_POST['pseu
 	$insertmsg->execute(array($pseudo, $message, $lat, $long));
 
 	
-}
 
+}
 ?>
 
 
@@ -39,22 +39,23 @@ if (isset($_POST['pseudo']) AND isset($_POST['usermsg']) AND !empty($_POST['pseu
 		
 
 		<form method="post" name="message" action="">
-    		<input name="pseudo" type="text" size="63" placeholder = "PSEUDO" value = "<?php if(isset($pseudo)) { echo $pseudo; } ?>" /><br />
+            
+            <input name="pseudo" type="text" size="63" placeholder = "PSEUDO" value = "<?php if(isset($pseudo)) { echo $pseudo; } ?>" /><br />
     		<input name="usermsg" type="text" size="63" placeholder = "MESSAGE" /><br />
     		
-    		<input name="latitude" type="hidden" id="latitude" value= "" />
+    	   	<input name="latitude" type="hidden" id="latitude" value= "" />
 	        <input name="longitude" type="hidden" id="longitude" value= "" />
 	        
-    		<input type="submit" value="Send" />
+    		<input type="submit" name="submitbtn" value="Send" />
 		</form>
 		 
-	    
+	    <div>
 		
         <?php
         
         $allmsg = $db->query('SELECT * FROM messages ORDER BY id DESC');
         
-        if (isset($lat) AND isset($long)){
+        if (isset($lat) AND isset($long) AND !empty($lat) AND !empty($long)){
         while($msg = $allmsg->fetch())
         {
         $facteur=0;
@@ -72,22 +73,27 @@ if (isset($_POST['pseudo']) AND isset($_POST['usermsg']) AND !empty($_POST['pseu
             }
         
         ?>
-        <b><?php echo $msg['pseudo']  ?> : </b><?php echo blur($msg['message'],$facteur),$facteur," (distance -->" ,$distance,")"  ?><br />
+        <b><?php echo $msg['pseudo']  ?> : </b><?php echo blur($msg['message'],$facteur)," (distance -->" ,$distance,")"  ?><br />
         
         <?php
         
         }
         }else{
             
-            echo "send a message to start chatting, spying on others isn't allowed...";
+            echo "send a message to start chatting, spying on others isn't allowed... (and allow localisation, this is mandatory)";
         }
         ?>
+        </div>
 
+        
 		<script>
 	        
 	        if (navigator.geolocation){
+	            
+	            
                 navigator.geolocation.getCurrentPosition((position) => {
-            
+                    
+                    
                     let lat = position.coords.latitude;
                     let long = position.coords.longitude;
                     
@@ -96,8 +102,12 @@ if (isset($_POST['pseudo']) AND isset($_POST['usermsg']) AND !empty($_POST['pseu
                      
                     var longitudepost = document.getElementById("longitude");
                     longitudepost.value = long;
+                    
+                    
                 });
-		    }
+            }
+            
 	    </script>
+
 	</body>
 </html>
