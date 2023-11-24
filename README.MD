@@ -2,14 +2,16 @@
 
 ## TO DO LIST
 
-- systeme de chat
-- systeme de calcul de distance
-- alteration des messages
+- systeme de chat (WIP)
+- systeme de calcul de distance (effectuer)
+- alteration des messages (effectuer)
 - applications mobiles
+- ameliorer l'IHM de la page web
 
 ## systeme de chat
 
 fait, a ameliorer, host ici https://clerical-chock.000webhostapp.com/
+
 ## Stockage des messages:
 
 sous la forme:
@@ -23,9 +25,9 @@ on utilise pythagore
 ## alteration des messages 
 
 plus on s'ecarte plus les caracteres ont de chances d'etres permutes avec un autre aleatoire.
-- zone 1 : rayon de ??? m --> msg clair
-- zone 2 : rayon de ??? a ???? --> caracteres permutes + possible floutage
-- zone 3 : + que ???? --> msg non affiche
+- zone 1 : rayon de moins de 50 m --> msg clair
+- zone 2 : rayon de 50 a 10 000 m --> caracteres permutes + possible floutage
+- zone 3 : + que 10 000 m --> msg non affiche
 
 ## app mobile
 
