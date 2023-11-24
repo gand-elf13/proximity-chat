@@ -1,3 +1,7 @@
+ <!-- 
+	code de la page admin permettant de gerer le site : 
+	voir les messages non floutes et sans limite de distance, 
+	ainsi que d'envoyer des messages avec les coordonnes que l'on veut
 <?php
 
 $complete = 5;
