@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://btpqempfsutdf"]
+[gd_scene load_steps=4 format=3 uid="uid://btpqempfsutdf"]
 
 [ext_resource type="Script" path="res://Scripts/ChatScrollContainer.gd" id="1_xso36"]
+[ext_resource type="PackedScene" uid="uid://cdtxne3fypldw" path="res://message_label.tscn" id="2_ol0hw"]
 
 [sub_resource type="SystemFont" id="SystemFont_wwe3b"]
 
@@ -69,12 +70,8 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="MessageLabel" type="RichTextLabel" parent="MainMarginContainer/MainContainer/ChatScrollContainer/VBoxContainer"]
+[node name="MessageLabel" parent="MainMarginContainer/MainContainer/ChatScrollContainer/VBoxContainer" instance=ExtResource("2_ol0hw")]
 layout_mode = 2
-size_flags_horizontal = 3
-bbcode_enabled = true
-text = "Username : This is a test message."
-fit_content = true
 
 [node name="MessageLabel2" type="RichTextLabel" parent="MainMarginContainer/MainContainer/ChatScrollContainer/VBoxContainer"]
 layout_mode = 2
