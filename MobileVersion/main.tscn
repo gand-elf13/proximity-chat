@@ -1,7 +1,6 @@
-[gd_scene load_steps=4 format=3 uid="uid://btpqempfsutdf"]
+[gd_scene load_steps=3 format=3 uid="uid://btpqempfsutdf"]
 
 [ext_resource type="Script" path="res://Scripts/ChatScrollContainer.gd" id="1_xso36"]
-[ext_resource type="PackedScene" uid="uid://cdtxne3fypldw" path="res://message_label.tscn" id="2_ol0hw"]
 
 [sub_resource type="SystemFont" id="SystemFont_wwe3b"]
 
@@ -37,7 +36,7 @@ bbcode_enabled = true
 text = "[center][b]Proximity Chat[/b][/center]"
 fit_content = true
 
-[node name="UsernameTextEdit" type="TextEdit" parent="MainMarginContainer/MainContainer"]
+[node name="UsernameLineEdit" type="LineEdit" parent="MainMarginContainer/MainContainer"]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(400, 36)
 layout_mode = 2
@@ -45,7 +44,7 @@ size_flags_horizontal = 4
 size_flags_vertical = 0
 placeholder_text = "Username"
 
-[node name="MessageTextEdit" type="TextEdit" parent="MainMarginContainer/MainContainer"]
+[node name="MessageLineEdit" type="LineEdit" parent="MainMarginContainer/MainContainer"]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(400, 36)
 layout_mode = 2
@@ -65,19 +64,11 @@ layout_mode = 2
 size_flags_vertical = 3
 script = ExtResource("1_xso36")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="MainMarginContainer/MainContainer/ChatScrollContainer"]
+[node name="MessageVBoxContainer" type="VBoxContainer" parent="MainMarginContainer/MainContainer/ChatScrollContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-
-[node name="MessageLabel" parent="MainMarginContainer/MainContainer/ChatScrollContainer/VBoxContainer" instance=ExtResource("2_ol0hw")]
-layout_mode = 2
-
-[node name="MessageLabel2" type="RichTextLabel" parent="MainMarginContainer/MainContainer/ChatScrollContainer/VBoxContainer"]
-layout_mode = 2
-size_flags_horizontal = 3
-bbcode_enabled = true
-text = "Username : This is another test message!"
-fit_content = true
+theme_override_constants/separation = 2
+alignment = 2
 
 [connection signal="pressed" from="MainMarginContainer/MainContainer/Button" to="MainMarginContainer/MainContainer/ChatScrollContainer" method="_on_button_pressed"]
