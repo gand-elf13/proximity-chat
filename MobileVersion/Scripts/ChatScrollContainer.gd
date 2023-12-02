@@ -10,6 +10,41 @@ extends ScrollContainer
 @onready var MessageLabelScene: PackedScene = preload ("res://message_label.tscn")
 
 
+
+func _ready():
+	var ip_address = "8.8.8.8"  # Replace this with the IP address you want to get location for
+
+	var url = "http://ipapi.co/" + ip_address + "/json/"
+
+	var http_request = HTTPRequest.new()
+	http_request.request_completed.connect(_on_request_completed)
+	add_child(http_request)
+
+	http_request.request(url)
+
+func _on_request_completed(
+	_result: int,
+	response_code: int,
+	_headers: PackedStringArray,
+	body: PackedByteArray,
+):
+	if response_code == 200:
+		var json: JSON = JSON.new()
+		var body_string: StringName = body.get_string_from_utf8()
+		var error: Error = json.parse(body_string)
+		if not error:
+			var data: Dictionary = json.data
+			var city = data[&"city"]
+			var country = data[&"country_name"]
+			var region = data[&"region"]
+			print(&"City: ", city)
+			print(&"Region: ", region)
+			print(&"Country: ", country)
+		else:
+			print(error)
+	else:
+		printerr(&"Failed to fetch data")
+
 func add_message (display_text: StringName) -> void:
 	var new_message := MessageLabelScene.instantiate ()
 	message_container.call_deferred ("add_child", new_message)
