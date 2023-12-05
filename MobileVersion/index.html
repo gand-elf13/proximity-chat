@@ -7,13 +7,13 @@
 	<body>
 		<h1><span class="span-title">Proximity Chat</span></h1>
 		<p>This chat is a WIP, for the moment you can chat on it, but it will have some cool functionalities based on your location, stay tuned !!!</p>
-		<a href="https://clerical-chock.000webhostapp.com/admin_stuff/admin.php" >le site admin pour ceux qui peuvent</a>
+		<a href="https://clerical-chock.000webhostapp.com/admin_stuff/admin.php">le site admin pour ceux qui peuvent</a>
 		<form class="input-form" method="post" name="message" action="">
-		 	<input name="pseudo" type="text" size="63" placeholder="PSEUDO"/>
-			<input name="usermsg" type="text" size="63" placeholder="MESSAGE"/>
+		 	<input name="pseudo" type="text" size="63" placeholder="PSEUDO" id="username-input"/>
+			<input name="usermsg" type="text" size="63" placeholder="MESSAGE" id="message-input"/>
 			<input name="latitude" type="hidden" id="latitude"/>
 			<input name="longitude" type="hidden" id="longitude"/>        
-      			<input name="submitbtn" type="submit" id="send-button" value="Send"/>
+      		<input name="submitbtn" type="submit" id="send-button" value="Send"/>
 		</form>
     		<div id="chatbox">
       			<p>
@@ -23,5 +23,4 @@
     		</div>
 		<script src="script.js"></script>
 	</body>
-	
 </html>

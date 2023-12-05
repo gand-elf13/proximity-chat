@@ -2,18 +2,27 @@ head, body {
   font-family: Georgia, serif;
 }
 
+p {
+  font-size: 2vw;
+}
+
 .span-title {
   background: linear-gradient(to top, #BF40BFAA 50%, transparent 50%);
+  font-size: 4vw;
 }
 
 .input-form {
   display: flex;
   width: auto;
-  height: 75px;
-  width: 300px;
   flex-direction: column;
   justify-content: space-evenly;
 }
+
+#username-input, #message-input, #send-button {
+  height: 8vw;
+  font-size: 6vw;
+}
+
 
 .username {
   font-weight: bold;
