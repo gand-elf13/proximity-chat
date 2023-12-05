@@ -1,0 +1,21 @@
+head, body {
+  font-family: Georgia, serif;
+}
+
+.span-title {
+  background: linear-gradient(to top, #BF40BFAA 50%, transparent 50%);
+}
+
+.input-form {
+  display: flex;
+  width: auto;
+  height: 75px;
+  width: 300px;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.username {
+  font-weight: bold;
+  background: linear-gradient(to top, #FFEA00AA 50%, transparent 50%);
+}
