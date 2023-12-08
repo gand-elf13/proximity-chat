@@ -1,0 +1,74 @@
+[gd_scene load_steps=3 format=3 uid="uid://btpqempfsutdf"]
+
+[ext_resource type="Script" path="res://Scripts/ChatScrollContainer.gd" id="1_xso36"]
+
+[sub_resource type="SystemFont" id="SystemFont_wwe3b"]
+
+[node name="Main" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MainMarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="MainContainer" type="VBoxContainer" parent="MainMarginContainer"]
+layout_mode = 2
+
+[node name="TitleLabel" type="RichTextLabel" parent="MainMarginContainer/MainContainer"]
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_fonts/bold_font = SubResource("SystemFont_wwe3b")
+theme_override_font_sizes/bold_font_size = 50
+bbcode_enabled = true
+text = "[center][b]Proximity Chat[/b][/center]"
+fit_content = true
+
+[node name="UsernameLineEdit" type="LineEdit" parent="MainMarginContainer/MainContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(400, 36)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+placeholder_text = "Username"
+
+[node name="MessageLineEdit" type="LineEdit" parent="MainMarginContainer/MainContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(400, 36)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+placeholder_text = "Message"
+
+[node name="Button" type="Button" parent="MainMarginContainer/MainContainer"]
+custom_minimum_size = Vector2(400, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+text = "Send message"
+
+[node name="ChatScrollContainer" type="ScrollContainer" parent="MainMarginContainer/MainContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+script = ExtResource("1_xso36")
+
+[node name="MessageVBoxContainer" type="VBoxContainer" parent="MainMarginContainer/MainContainer/ChatScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/separation = 2
+alignment = 2
+
+[connection signal="pressed" from="MainMarginContainer/MainContainer/Button" to="MainMarginContainer/MainContainer/ChatScrollContainer" method="_on_button_pressed"]
