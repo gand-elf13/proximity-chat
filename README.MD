@@ -21,13 +21,12 @@ Les informations gardées sont l'identité du message (le quantième message), l
 
 ## Calcul de la distance 
 
-$\text{Voici la formule :}$
-$D=R_T(\sin\phi_0\cdot\sin\phi+\cos\phi_0\cdot\cos\phi_1\cdot\cos\Delta\lambda)$
-avec:
-$R_T=6.3710\cdot10^{3}km\text{ (le rayon de la Terre)}$
-$\phi_0,\phi_1\text{ en } rad\text{ (les latitudes respectives des points } P_0\text{ et }P_1)$
-$\lambda_0,\lambda_1\text{ en } rad\text{ (les longitudes respectives des points } P_0\text{ et }P_1)$
-$\Delta\lambda=\lambda_1-\lambda_0\text{ en }rad$ 
+$\text{Voici la formule :}$\
+$D=R_T(\sin\phi_0\cdot\sin\phi+\cos\phi_0\cdot\cos\phi_1\cdot\cos\Delta\lambda)$\
+$R_T=6.3710\cdot10^{3}km\text{ (le rayon de la Terre)}$\
+$\phi_0,\phi_1\text{ en } rad\text{ (les latitudes respectives des points } P_0\text{ et }P_1)$\
+$\lambda_0,\lambda_1\text{ en } rad\text{ (les longitudes respectives des points } P_0\text{ et }P_1)$\
+$\Delta\lambda=\lambda_1-\lambda_0\text{ en }rad$\
 
 
 ## Altération des messages 
