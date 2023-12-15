@@ -1,7 +1,0 @@
-[gd_scene format=3 uid="uid://cdtxne3fypldw"]
-
-[node name="MessageLabel" type="RichTextLabel"]
-size_flags_horizontal = 3
-bbcode_enabled = true
-text = "Username : This is a test message."
-fit_content = true
