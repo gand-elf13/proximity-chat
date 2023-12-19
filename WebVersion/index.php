@@ -3,10 +3,20 @@ include ('BlurModule.php');
 include ('GetDistanceModule.php');
 
 
-// add to input texts (autocomplete="off") to avoid keeping track of the sent messages
-// change webscript.js to keep focusing on correct input element, to better the UX
-// change the body's background to (linear-gradient(#605e7b, #4c4b6b) fixed no-repeat)
-// copy the javascript script to the one stored in the server
+/*
+- add to input texts (autocomplete="off") to avoid keeping track of the sent messages
+- change webscript.js to keep focusing on correct input element, to better the UX
+- change the body's background to (linear-gradient(#605e7b, #4c4b6b) fixed no-repeat)
+- copy the javascript script to the one stored in the server
+- add to the server's stylesheet:
+#send-button, #message-input, #username-input {
+	border-radius: 1vw;
+}
+
+#send-button {
+	cursor: pointer;
+}
+*/
 
 
 $completeMessage = 100;
