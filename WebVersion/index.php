@@ -2,11 +2,19 @@
 include ('BlurModule.php');
 include ('GetDistanceModule.php');
 
+
+// add to input texts (autocomplete="off") to avoid keeping track of the sent messages
+// change webscript.js to keep focusing on correct input element, to better the UX
+// change the body's background to (linear-gradient(#605e7b, #4c4b6b) fixed no-repeat)
+// copy the javascript script to the one stored in the server
+
+
 $completeMessage = 100;
 $partialMessage = 10000;
 $receiveMessage = 15000;
 
 $db = new PDO('mysql:host=localhost;dbname=id19729685_messages'  ,'id19729685_root','HP&lc2fc1');
+
 
 if (isset($_POST['latitude']) AND isset($_POST['longitude']) AND !empty($_POST['latitude']) AND !empty($_POST['longitude']) )
 {
@@ -22,26 +30,21 @@ if (isset($_POST['pseudo']) AND isset($_POST['usermsg']) AND !empty($_POST['pseu
 	
 	if (isset($_POST['latitude']) AND isset($_POST['longitude']) AND !empty($_POST['latitude']) AND !empty($_POST['longitude']))
 	{
-    	$insertmsg = $db->prepare("INSERT INTO messages(pseudo, message, latitude, longitude) VALUES(?,?,?,?)");
-    	$insertmsg->execute(array($username, $message, $lat, $long));
+    		$insertmsg = $db->prepare("INSERT INTO messages(pseudo, message, latitude, longitude) VALUES(?,?,?,?)");
+    		$insertmsg->execute(array($username, $message, $lat, $long));
 	}
-};
-
-
-
+}
 ?>
+
 
 <!DOCTYPE html>
 <html>
 	<head>
 		<title>Proximity Chat</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="./stylesheet.css" rel="stylesheet" />
+        	<link href="./stylesheet.css" rel="stylesheet" />
 	</head>
 	<body>
-	   
-		
-		
 		<h1><span class="span-title">Proximity Chat</span></h1>
 		<p>This chat is a WIP, for the moment you can chat on it, but it will have some cool functionalities based on your location, stay tuned !!!</p>
 		<a href="https://clerical-chock.000webhostapp.com/admin_stuff/admin.php" >le site admin pour ceux qui peuvent</a></br>
@@ -50,7 +53,7 @@ if (isset($_POST['pseudo']) AND isset($_POST['usermsg']) AND !empty($_POST['pseu
 
 		<form class="input-form" method="post" name="message" action="">
             
-            <input id="username-input" name="pseudo" type="text" size="63" placeholder = "PSEUDO" value = "<?php if(isset($username)) { echo $username; } ?>" /><br />
+		<input id="username-input" name="pseudo" type="text" size="63" placeholder = "PSEUDO" value = "<?php if(isset($username)) { echo $username; } ?>" /><br />
     		<input id="message-input" name="usermsg" type="text" size="63" placeholder = "MESSAGE"  value  = "" /><br />
     		
     		<input name="latitude" type="hidden" id="latitudetemp" value= "" />
@@ -62,7 +65,7 @@ if (isset($_POST['pseudo']) AND isset($_POST['usermsg']) AND !empty($_POST['pseu
 		
 		<form class="reload-form" method="post" id = "reload"  name="status" action="">
             
-            <input name="pseudo" type="hidden" size="63" value = "<?php if(isset($username)) { echo $username; } ?>" /><br />
+		<input name="pseudo" type="hidden" size="63" value = "<?php if(isset($username)) { echo $username; } ?>" /><br />
     		
     	   	<input name="latitude" type="hidden" id="test2" value= "" />
 	        <input name="longitude" type="hidden" id="test3" value= "" />
@@ -125,6 +128,6 @@ if (isset($_POST['pseudo']) AND isset($_POST['usermsg']) AND !empty($_POST['pseu
             }
             ?>
         </div>
-	    <script src="script.js"></script>
+	    <script src="webscript.js"></script>
 	</body>
 </html>
