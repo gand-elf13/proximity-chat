@@ -46,6 +46,8 @@ La conception du site (notamment du fichier `index.php`) est réactive (elle s'a
 
 ## Documentation
 
+comparaison  avec chat gpt https://chat.openai.com/share/08af03a7-3c1d-4c27-8ded-28a146059ddf
+
 la documentation complete se trouve dans le fichier [Documentation.md](Documentation.md)
 
 le site web es composé d'une page principale appelée [`index.php`](WebVersion/index.php) qui sert d'interface.
