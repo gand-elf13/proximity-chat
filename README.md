@@ -44,4 +44,14 @@ Plus on s'écarte, plus les caractères ont de chances d'êtres permutés par un
 ~~WIP, idée de créer une page d'entrée avec le choix d'une version PC ou mobile~~
 La conception du site (notamment du fichier `index.php`) est réactive (elle s'adapte elle-même pour que le contenu puisse être correctement lu et ajouté par n'importe quel utilisateur peu importe l'appareil employé) !
 
+## Documentation
 
+la documentation complete se trouve dans le fichier [Documentation.md](Documentation.md)
+
+le site web es composé d'une page principale appelée [`index.php`](WebVersion/index.php) qui sert d'interface.
+
+les messages sont evoyés dans une base de donnée  mySQL hebergée sur le meme server.
+
+la requette contien aussi les coordonnées gps ou le message as été envoyé ce qui permet de calculer la distance entre l'utilisateur et chaque message a afficher a l'aide de [`GetDistanceModule.php`](WebVersion/GetDistanceModule.php). une fois la distance calculée, le fichier [`BlurModule.php`](WebVersion/BlurModule.php) permet d'alterer le message en fonction de la distance.
+
+le fichier [`webscript.js`](WebVersion/webscript.js) permet de recuperer les coordonnées gps et rendre la page plus fluide en mettant as jour les messages automatiquement entre autre.
