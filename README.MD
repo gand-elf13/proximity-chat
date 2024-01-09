@@ -36,7 +36,8 @@ $\Delta\lambda=\lambda_1-\lambda_0\text{ en }rad$
 Plus on s'écarte, plus les caractères ont de chances d'êtres permutés par un autre caractère aléatoire tiré d'une liste définie. La distance entre l'utilisateur et l'expéditeur du message détermine un pourcentage de permutation en fonction du résultat, le caractère a plus ou moins de chance d'être modifié.
 - Zone 1 : rayon de moins de 50 m --> message clair et lisible
 - Zone 2 : rayon de 50 a 10 000 m --> certains caractères sont permutés, le message pert en lisibilité
-- zone 3 : au-delà que 10 000 m --> le message est entièrement altéré
+- zone 3 : au-delà de 10 km --> le message est entièrement altéré
+- zone 4 : qu delà de 15 km --> le message n'est pas affiché
 
 ## App mobile
 
