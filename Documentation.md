@@ -1,3 +1,4 @@
+
 # Documentation
 
 ## Remarques
@@ -18,12 +19,12 @@ On y retrouve:
 - Le fichier principal du site [index.php](#fichier-index.php) gérant le *HTML* de façon dynamique et responsable
 - Le fichier [webscript.js](#fichier-webscript.js) aidant `index.php` à l'*UX* et gérant les données de géolocalisation avec le fichier principal du site
 - Le fichier [stylesheet.css](#fichier-stylesheet.css) ajoutant du style au site et améliorant la gestion de l'espace par chaque élément *HTML*
-- Le fichier [GetDistance.php](#fichier-getdistance.php) permettant à `webscript.js` et `index.php` afin de calculer la distance entre l'utilisateur et la localisation de chaque message afin de *blur* les messages correctement
-- Le fichier [BlurModule.php](#fichier-blurmodule.php) censurant les messages en fonction de la localisation du message et celle de l'utilisateur à l'aide d'un pourcentage déterminé à l'aide de `GetDistance.php`
+- Le fichier [GetDistanceModule.php](#fichier-getdistancemodule.php) permettant à `webscript.js` et `index.php` afin de calculer la distance entre l'utilisateur et la localisation de chaque message afin de *blur* les messages correctement
+- Le fichier [BlurModule.php](#fichier-blurmodule.php) censurant les messages en fonction de la localisation du message et celle de l'utilisateur à l'aide d'un pourcentage déterminé à l'aide de `GetDistanceModule.php`
 
 ### Fichier [index.php](/WebVersion/index.php)
 
-C'est le fichier `html` superposé sur un fichier `php` rendant cette page dynamique. Le but de ce fichier est d'organiser l'affichage des messages et des boutons. Il se sert du [stylesheet.css](#fichier-stylesheet.css) mais le fichier `index.php` emploie aussi le fichier [webscript.js](#fichier-webscript.js), ainsi que les différents modules - c'est-à-dire [GetDistance.php](#fichier-getdistance.php), [BlurModule.php](#fichier-blurmodule.php).
+C'est le fichier `html` superposé sur un fichier `php` rendant cette page dynamique. Le but de ce fichier est d'organiser l'affichage des messages et des boutons. Il se sert du [stylesheet.css](#fichier-stylesheet.css) mais le fichier `index.php` emploie aussi le fichier [webscript.js](#fichier-webscript.js), ainsi que les différents modules - c'est-à-dire [GetDistanceModule.php](#fichier-getdistancemodule.php), [BlurModule.php](#fichier-blurmodule.php).
 
 ### Fichier [stylesheet.css](/WebVersion/stylesheet.css)
 
@@ -39,7 +40,7 @@ C'est le fichier `js` aidant au fichier principal du site. Ce fichier est multif
 	- en conservant la progression de l'utilisateur (via `window.scrollY`) après que le site se recharge
 	- en sélectionnant la ligne d'entrée sélectionnée antérieurement après le rechargement du site (puisque chaque *refresh* provoque une désélection, "défocalisation" de l'objet HTML avec lequel l'utilisateur intéragit à l'instant du *refresh*)
 
-### Fichier [GetDistance.php](/WebVersion/GetDistance.php)
+### Fichier [GetDistanceModule.php](/WebVersion/GetDistanceModule.php)
 
 C'est un fichier permettant de calculer la distance entre deux points situées sur la Terre, en employant leur latitudes et longitudes. (cf la formule utilisée dans le [README.md](#fichier-readme.md).
 
