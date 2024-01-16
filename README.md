@@ -24,7 +24,7 @@ Les informations gardées sont l'identité du message (le quantième message), l
 
 ## Calcul de la distance 
 
-$D=R_T\cdot(\sin\phi_0\cdot\sin\phi+\cos\phi_0\cdot\cos\phi_1\cdot\cos\Delta\lambda)$\
+$D=R_T\cdot(\sin\phi_0\cdot\sin\phi_1+\cos\phi_0\cdot\cos\phi_1\cdot\cos\Delta\lambda)$\
 $D\text{ en }km\text{, la distance entre les deux points}$\
 $R_T=6.3710\cdot10^{3}km\text{ (le rayon de la Terre)}$\
 $\phi_0,\phi_1\text{ en } rad\text{ (les latitudes respectives des points } P_0\text{ et }P_1)$\
