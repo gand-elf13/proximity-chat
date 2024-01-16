@@ -1,16 +1,28 @@
 head, body {
-  font-family: Georgia, serif;
+  	font-family: Georgia, serif;
+}
+
+body {
+	background: linear-gradient(#605e7b, #4c4b6b) fixed no-repeat
 }
 
 .span-title {
-  background: linear-gradient(to top, #BF40BFAA 50%, transparent 50%);
+	background: linear-gradient(to top, #BF40BFAA 50%, transparent 50%);
 }
 
 .input-form {
-  display: flex;
-  width: auto;
-  height: 75px;
-  width: 300px;
-  flex-direction: column;
-  justify-content: space-evenly;
+  	display: flex;
+  	width: auto;
+  	height: 75px;
+  	width: 300px;
+	flex-direction: column;
+ 	justify-content: space-evenly;
+}
+
+#send-button, #message-input, #username-input {
+	border-radius: 1vw;
+}
+
+#send-button {
+	cursor: pointer;
 }
