@@ -11,12 +11,31 @@ II
 
 
 Le roi Marsile est à Saragosse. Il s’en est allé dans un verger, sous l’ombre. Sur un perron de marbre bleu il se couche ; autour de lui, ils sont plus de vingt mille. Il appelle et ses ducs et ses comtes : « Entendez, seigneurs, quel fléau  nous frappe. L’empereur Charles de douce France est venu dans ce pays pour nous confondre. Je n’ai point d’armée qui lui donne la bataille ; ma gent n’est pas de force à rompre la sienne. Conseillez-moi, vous, mes hommes sages, et gardez-moi et de mort et de honte ! » Il n’est païen qui réponde un seul mot, sinon Blancandrin, du château de Val-Fonde.
+## 2e site parc edmond rotchild
 
-## 2e site Golf de Paris
+lat : 48.85009
+
+long : 2.22991
+
+text : Ah ! ah ! fit-il, qu’est-ce que cela ?
+
+– C’est avec Monsieur que je me bats, dit Athos en montrant de la main d’Artagnan, et en le saluant du même geste.
+
+– C’est avec lui que je me bats aussi, dit Porthos.
+
+– Mais à une heure seulement, répondit d’Artagnan.
+
+– Et moi aussi, c’est avec monsieur que je me bats, dit Aramis en arrivant à son tour sur le terrain.
+
+– Mais à deux heures seulement, fit d’Artagnan avec le même calme. 
+- Et maintenant que vous êtes rassemblés, messieurs, dit d’Artagnan, permettez-moi de vous faire mes excuses.
+
+Vous ne me comprenez pas, messieurs, dit d’Artagnan en relevant sa tête, sur laquelle jouait en ce moment un rayon de soleil qui en dorait les lignes fines et hardies : je vous demande excuse dans le cas où je ne pourrais vous payer ma dette à tous trois, car M. Athos a le droit de me tuer le premier, ce qui ôte beaucoup de sa valeur à votre créance, Monsieur Porthos, et ce qui rend la vôtre à peu près nulle, Monsieur Aramis. Et maintenant, Messieurs, je vous le répète, excusez-moi, mais de cela seulement, et en garde ! 
+## 3e site Golf de Paris
 
 lat : 48.85323
 
-long : 2.22991
+long : 2.20692
 
 text : Le golf est un sport,
 Qui demande peu d'effort,
@@ -64,7 +83,7 @@ Ferez nombreux détours,
 Pour visiter tous les parcours.
 
 
-## 3e site Saint Germain en lait
+## 4e site Saint Germain en lait
 
 lat : 48.89900
 
@@ -89,7 +108,7 @@ Je vois clair et ne suis pas bigle.
 Fi des idiots qui balbutient !
 Gloire au savant qui m'entretient !
 
-## 4e site La Croatie
+## 5e site La Croatie
 
 lat : 43.4871
 
