@@ -1,13 +1,43 @@
-head, body {
-  	font-family: Georgia, serif;
+::placeholder, a {
+    color: #A9DDD6;
 }
 
-body {
-	background: linear-gradient(#605e7b, #4c4b6b) fixed no-repeat
+head, body {
+    font-family: Georgia, serif;
+    color: #EAEAEA;
+    background: linear-gradient(#605e7b, #413f89) fixed no-repeat;
 }
 
 .span-title {
-	background: linear-gradient(to top, #BF40BFAA 50%, transparent 50%);
+    background: linear-gradient(to top, #437F97 50%, transparent 50%);
+    font-size: 10vw;
+    color: #EAEAEA;
+}
+
+#username-input, #message-input {
+    background-color: #437F97;
+    color: #EAEAEA;
+}
+
+#send-button {
+    background-color: #00008B;
+    color: #EAEAEA;
+	cursor: pointer;
+}
+
+
+.messages-display {
+    color: #7DF9FF;
+}
+    
+.username {
+    font-weight: bold;
+    color: #EAEAEA;
+    background: linear-gradient(to top, #437F97AA 50%, transparent 50%);
+}
+
+.distance {
+    color: #D3D3D3;   
 }
 
 .input-form {
@@ -21,8 +51,4 @@ body {
 
 #send-button, #message-input, #username-input {
 	border-radius: 1vw;
-}
-
-#send-button {
-	cursor: pointer;
 }
