@@ -2,7 +2,7 @@
 include ('GetDistanceModule.php');
 
 
-$db = new PDO('mysql:host=localhost;dbname=id19729685_messages'  ,'id19729685_root','HP&lc2fc1');
+$db = new PDO('mysql:host=localhost;dbname=id19729685_messages'  ,'id19729685_root','password');
 
 if (isset($_POST['latitude']) AND isset($_POST['longitude']) AND !empty($_POST['latitude']) AND !empty($_POST['longitude']) )
 {
